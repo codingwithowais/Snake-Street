@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Playfair+Display&family=Russo+One&family=Satisfy&family=Song+Myung&family=Supermercado+One&family=Ubuntu+Condensed&display=swap');
+*{
+    
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: url('/img/bg.jpg') no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Satisfy', cursive;
+
+
+}
+#board{
+    width: 40vw;
+    height: 40vw;
+    /* margin: auto; */
+    border: 2px solid black;
+    border-radius: 10px;
+    background: linear-gradient(rgb(66, 36, 66),rgb(80, 24, 24));
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background-color: darkgreen;
+    border: 2px solid white;
+    border-radius: 8px;
+    transform: scale(1.2);
+}
+.snake{
+    background: linear-gradient(rgb(165, 165, 204),rgb(124, 231, 124));
+    border: 2px solid white
+    ;
+    border-radius: 8px; 
+}
+.feed{
+    background-color: yellow;
+    
+    border-radius: 8px; 
+}
+#scoreCard{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Russo One', sans-serif;
+
+}
+#hiScore{
+    position: absolute;
+    top: 12%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Russo One', sans-serif;
+}
+
+
+
+@media only screen and (min-width: 1024px) and (max-width:1280px) {
+   
+
+    .keys{
+        height: 5vmin;
+        width: 8vmin;
+        border-radius: 5px;
+        background-color: black;
+        margin: 8px;
+    }
+    .arrows{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #phone{
+        position: absolute;
+        bottom:-0.8vw;
+        left: 44vw;
+    }
+    .bottoms{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    
+}
+
+@media only screen and (max-width: 1023px){
+    #board{
+        width: 70vw;
+        height: 70vw;
+        /* margin: auto; */
+        border: 2px solid black;
+        border-radius: 10px;
+        background: linear-gradient(rgb(66, 36, 66),rgb(80, 24, 24));
+        display: grid;
+        grid-template-rows: repeat(18,1fr);
+        grid-template-columns: repeat(18,1fr);
+    }
+  
+    .keys{
+        height: 10vmin;
+        width: 12vmin;
+        border-radius: 5px;
+        background-color: black;
+        margin: 15px;
+    }
+    .arrows{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #phone{
+        position: absolute;
+        bottom:0vw;
+        left: 22vw;
+    }
+    .bottoms{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+}
+
